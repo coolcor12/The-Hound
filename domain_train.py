@@ -12,7 +12,7 @@ def train(model_name):
     collection = Collection(model_name)
     
     # import data from csv and make dataset
-    data = pd.read_csv('data/sentences3.csv')
+    data = pd.read_csv('data/sentences4.csv')
     dataset = [[data[key][i], key] for key in list(data) \
                 for i in range(len(data[key]))]
     
