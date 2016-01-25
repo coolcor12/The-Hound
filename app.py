@@ -21,7 +21,7 @@ def similar(s1, s2):
 @app.route('/<user_input>')
 def api_root(user_input):
    text = ' '.join(user_input.split('-'))
-   domain = classify('Test02', text)
+   domain = classify('Test04', text)
    if domain != 'Flattery':
        return domain
    memory = load_memory()
